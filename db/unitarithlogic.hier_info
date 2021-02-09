@@ -1,0 +1,796 @@
+|unitarithlogic
+o1 <= 81mux:inst.Y
+s2_ou_B4 => 74273:inst7.D2
+s2_ou_B4 => soustract4:inst22.b4
+s2_ou_B4 => 7483:inst4.B4
+s2_ou_B4 => multiplier4:inst1.k4
+s2_ou_B4 => 4_and:inst24.b4
+s2_ou_B4 => 4_xor:inst23.b4
+s2_ou_B4 => or_4:inst25.b4
+s2_ou_B4 => 7447:inst31.D
+s3_and_get => 74273:inst7.D3
+s3_and_get => inst26.IN1
+s3_and_get => inst21.IN0
+s1_ou_B3 => 74273:inst7.D1
+s1_ou_B3 => soustract4:inst22.b3
+s1_ou_B3 => 7483:inst4.B3
+s1_ou_B3 => multiplier4:inst1.k3
+s1_ou_B3 => 4_and:inst24.b3
+s1_ou_B3 => 4_xor:inst23.b3
+s1_ou_B3 => or_4:inst25.b3
+s1_ou_B3 => 7447:inst31.C
+SEL_OR_CALC => 74273:inst7.CLK
+SEL_OR_CALC => BlockChoice:inst34.S
+A1 => soustract4:inst22.a1
+A1 => 7483:inst4.A1
+A1 => multiplier4:inst1.h1
+A1 => 4_and:inst24.a1
+A1 => 4_xor:inst23.a1
+A1 => or_4:inst25.a1
+A1 => 74194:mylove.A
+A1 => 7447:inst30.A
+A2 => soustract4:inst22.a2
+A2 => 7483:inst4.A2
+A2 => multiplier4:inst1.h2
+A2 => 4_and:inst24.a2
+A2 => 4_xor:inst23.a2
+A2 => or_4:inst25.a2
+A2 => 74194:mylove.B
+A2 => 7447:inst30.B
+A3 => soustract4:inst22.a3
+A3 => 7483:inst4.A3
+A3 => multiplier4:inst1.h3
+A3 => 4_and:inst24.a3
+A3 => 4_xor:inst23.a3
+A3 => or_4:inst25.a3
+A3 => 74194:mylove.C
+A3 => 7447:inst30.C
+A4 => soustract4:inst22.a4
+A4 => 7483:inst4.A4
+A4 => multiplier4:inst1.h4
+A4 => 4_and:inst24.a4
+A4 => 4_xor:inst23.a4
+A4 => or_4:inst25.a4
+A4 => 74194:mylove.D
+A4 => 7447:inst30.D
+B1 => soustract4:inst22.b1
+B1 => 7483:inst4.B1
+B1 => multiplier4:inst1.k1
+B1 => 4_and:inst24.b1
+B1 => 4_xor:inst23.b1
+B1 => or_4:inst25.b1
+B1 => 74194:mylove.SLSI
+B1 => 74194:mylove.SRSI
+B1 => 7447:inst31.A
+B2 => soustract4:inst22.b2
+B2 => 7483:inst4.B2
+B2 => multiplier4:inst1.k2
+B2 => 4_and:inst24.b2
+B2 => 4_xor:inst23.b2
+B2 => or_4:inst25.b2
+B2 => 7447:inst31.B
+SHIFT => 74194:mylove.CLK
+o2 <= 81mux:inst8.Y
+o3 <= 81mux:inst9.Y
+o4 <= 81mux:inst5.Y
+o5 <= 81mux:inst10.Y
+o6 <= 81mux:inst11.Y
+o7 <= 81mux:inst12.Y
+o8 <= 81mux:inst13.Y
+sa0 <= BlockChoice:inst34.Sa
+sb0 <= BlockChoice:inst34.Sb
+sc0 <= BlockChoice:inst34.Sc
+sd0 <= BlockChoice:inst34.Sd
+se0 <= BlockChoice:inst34.Se
+sf0 <= BlockChoice:inst34.Sf
+sg0 <= BlockChoice:inst34.Sg
+sa1 <= 7447:inst29.OA
+sb1 <= 7447:inst29.OB
+sc1 <= 7447:inst29.OC
+sd1 <= 7447:inst29.OD
+se1 <= 7447:inst29.OE
+sf1 <= 7447:inst29.OF
+sg1 <= 7447:inst29.OG
+sa2 <= 7447:inst31.OA
+sb2 <= 7447:inst31.OB
+sa3 <= 7447:inst30.OA
+sb3 <= 7447:inst30.OB
+sc3 <= 7447:inst30.OC
+sd3 <= 7447:inst30.OD
+se3 <= 7447:inst30.OE
+sf3 <= 7447:inst30.OF
+sg3 <= 7447:inst30.OG
+sc2 <= 7447:inst31.OC
+sd2 <= 7447:inst31.OD
+se2 <= 7447:inst31.OE
+sf2 <= 7447:inst31.OF
+sg2 <= 7447:inst31.OG
+
+
+|unitarithlogic|81mux:inst
+d0 => f81mux:sub.d0
+d1 => f81mux:sub.d1
+d2 => f81mux:sub.d2
+d3 => f81mux:sub.d3
+d4 => f81mux:sub.d4
+d5 => f81mux:sub.d5
+d6 => f81mux:sub.d6
+d7 => f81mux:sub.d7
+a => f81mux:sub.a
+b => f81mux:sub.b
+c => f81mux:sub.c
+gn => f81mux:sub.gn
+wn <= f81mux:sub.wn
+y <= f81mux:sub.y
+
+
+|unitarithlogic|81mux:inst|f81mux:sub
+WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
+D0 => 59.IN0
+A => 19.IN0
+D1 => 60.IN0
+B => 17.IN0
+D2 => 61.IN0
+D3 => 62.IN0
+C => 16.IN0
+D4 => 63.IN0
+D5 => 64.IN0
+D6 => 65.IN0
+D7 => 66.IN0
+GN => 13.IN0
+y <= 82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|74273:inst7
+Q1 <= 19.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 19.ACLR
+CLRN => 18.ACLR
+CLRN => 17.ACLR
+CLRN => 16.ACLR
+CLRN => 15.ACLR
+CLRN => 14.ACLR
+CLRN => 13.ACLR
+CLRN => 12.ACLR
+CLK => 19.CLK
+CLK => 18.CLK
+CLK => 17.CLK
+CLK => 16.CLK
+CLK => 15.CLK
+CLK => 14.CLK
+CLK => 13.CLK
+CLK => 12.CLK
+D1 => 19.DATAIN
+Q2 <= 18.DB_MAX_OUTPUT_PORT_TYPE
+D2 => 18.DATAIN
+Q3 <= 17.DB_MAX_OUTPUT_PORT_TYPE
+D3 => 17.DATAIN
+Q4 <= 16.DB_MAX_OUTPUT_PORT_TYPE
+D4 => 16.DATAIN
+Q5 <= 15.DB_MAX_OUTPUT_PORT_TYPE
+D5 => 15.DATAIN
+Q6 <= 14.DB_MAX_OUTPUT_PORT_TYPE
+D6 => 14.DATAIN
+Q7 <= 13.DB_MAX_OUTPUT_PORT_TYPE
+D7 => 13.DATAIN
+Q8 <= 12.DB_MAX_OUTPUT_PORT_TYPE
+D8 => 12.DATAIN
+
+
+|unitarithlogic|soustract4:inst22
+o1 <= 7483:inst.S1
+b4 => 7483:inst.B4
+a1 => inst2.IN0
+a2 => inst3.IN0
+b1 => 7483:inst.B1
+b2 => 7483:inst.B2
+a3 => inst4.IN0
+b3 => 7483:inst.B3
+a4 => inst5.IN0
+o2 <= 7483:inst.S2
+o3 <= 7483:inst.S3
+o4 <= 7483:inst.S4
+o5 <= 7483:inst.C4
+
+
+|unitarithlogic|soustract4:inst22|7483:inst
+C4 <= 83.DB_MAX_OUTPUT_PORT_TYPE
+B4 => 22.IN0
+B4 => 26.IN0
+A4 => 22.IN1
+A4 => 26.IN1
+B3 => 21.IN0
+B3 => 25.IN0
+A3 => 21.IN1
+A3 => 25.IN1
+B2 => 20.IN0
+B2 => 24.IN0
+A2 => 20.IN1
+A2 => 24.IN1
+B1 => 19.IN0
+B1 => 23.IN0
+A1 => 19.IN1
+A1 => 23.IN1
+C0 => 17.IN0
+S4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= 42.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|7483:inst4
+C4 <= 83.DB_MAX_OUTPUT_PORT_TYPE
+B4 => 22.IN0
+B4 => 26.IN0
+A4 => 22.IN1
+A4 => 26.IN1
+B3 => 21.IN0
+B3 => 25.IN0
+A3 => 21.IN1
+A3 => 25.IN1
+B2 => 20.IN0
+B2 => 24.IN0
+A2 => 20.IN1
+A2 => 24.IN1
+B1 => 19.IN0
+B1 => 23.IN0
+A1 => 19.IN1
+A1 => 23.IN1
+C0 => 17.IN0
+S4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= 42.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|multiplier4:inst1
+o1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+h1 => inst5.IN0
+h1 => inst6.IN0
+h1 => inst7.IN0
+h1 => inst8.IN0
+k1 => inst5.IN1
+k1 => inst9.IN1
+k1 => inst14.IN0
+k1 => inst18.IN0
+o2 <= 7483:inst.S1
+h2 => inst12.IN0
+h2 => inst9.IN0
+h2 => inst10.IN0
+h2 => inst11.IN0
+k4 => inst12.IN1
+k4 => inst8.IN1
+k4 => inst17.IN0
+k4 => inst21.IN0
+k2 => inst6.IN1
+k2 => inst10.IN1
+k2 => inst15.IN0
+k2 => inst19.IN0
+k3 => inst7.IN1
+k3 => inst11.IN1
+k3 => inst16.IN0
+k3 => inst20.IN0
+o3 <= 7483:inst1.S1
+h3 => inst17.IN1
+h3 => inst14.IN1
+h3 => inst15.IN1
+h3 => inst16.IN1
+o4 <= 7483:inst2.S1
+h4 => inst21.IN1
+h4 => inst18.IN1
+h4 => inst19.IN1
+h4 => inst20.IN1
+o5 <= 7483:inst2.S2
+o6 <= 7483:inst2.S3
+o7 <= 7483:inst2.S4
+o8 <= 7483:inst2.C4
+
+
+|unitarithlogic|multiplier4:inst1|7483:inst
+C4 <= 83.DB_MAX_OUTPUT_PORT_TYPE
+B4 => 22.IN0
+B4 => 26.IN0
+A4 => 22.IN1
+A4 => 26.IN1
+B3 => 21.IN0
+B3 => 25.IN0
+A3 => 21.IN1
+A3 => 25.IN1
+B2 => 20.IN0
+B2 => 24.IN0
+A2 => 20.IN1
+A2 => 24.IN1
+B1 => 19.IN0
+B1 => 23.IN0
+A1 => 19.IN1
+A1 => 23.IN1
+C0 => 17.IN0
+S4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= 42.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|multiplier4:inst1|7483:inst1
+C4 <= 83.DB_MAX_OUTPUT_PORT_TYPE
+B4 => 22.IN0
+B4 => 26.IN0
+A4 => 22.IN1
+A4 => 26.IN1
+B3 => 21.IN0
+B3 => 25.IN0
+A3 => 21.IN1
+A3 => 25.IN1
+B2 => 20.IN0
+B2 => 24.IN0
+A2 => 20.IN1
+A2 => 24.IN1
+B1 => 19.IN0
+B1 => 23.IN0
+A1 => 19.IN1
+A1 => 23.IN1
+C0 => 17.IN0
+S4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= 42.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|multiplier4:inst1|7483:inst2
+C4 <= 83.DB_MAX_OUTPUT_PORT_TYPE
+B4 => 22.IN0
+B4 => 26.IN0
+A4 => 22.IN1
+A4 => 26.IN1
+B3 => 21.IN0
+B3 => 25.IN0
+A3 => 21.IN1
+A3 => 25.IN1
+B2 => 20.IN0
+B2 => 24.IN0
+A2 => 20.IN1
+A2 => 24.IN1
+B1 => 19.IN0
+B1 => 23.IN0
+A1 => 19.IN1
+A1 => 23.IN1
+C0 => 17.IN0
+S4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= 42.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|4_and:inst24
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a1 => inst.IN0
+b1 => inst.IN1
+o2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a2 => inst1.IN0
+b2 => inst1.IN1
+o3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+a3 => inst2.IN0
+b3 => inst2.IN1
+o4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a4 => inst3.IN0
+b4 => inst3.IN1
+
+
+|unitarithlogic|4_xor:inst23
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a1 => inst.IN0
+b1 => inst.IN1
+o2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a2 => inst1.IN0
+b2 => inst1.IN1
+o3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+a3 => inst2.IN0
+b3 => inst2.IN1
+o4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a4 => inst3.IN0
+b4 => inst3.IN1
+
+
+|unitarithlogic|or_4:inst25
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+b1 => inst.IN0
+a1 => inst.IN1
+o2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+b2 => inst1.IN0
+a2 => inst1.IN1
+o3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b3 => inst2.IN0
+a3 => inst2.IN1
+o4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+b4 => inst3.IN0
+a4 => inst3.IN1
+
+
+|unitarithlogic|74194:mylove
+QD <= 38.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 38.ACLR
+CLRN => 39.ACLR
+CLRN => 40.ACLR
+CLRN => 41.ACLR
+CLK => 38.CLK
+CLK => 39.CLK
+CLK => 40.CLK
+CLK => 41.CLK
+S1 => 13.IN0
+S1 => 52.IN0
+S1 => 56.IN0
+S1 => 60.IN0
+S1 => 64.IN0
+S1 => 63.IN1
+S1 => 59.IN2
+S1 => 55.IN2
+S1 => 51.IN2
+S0 => 12.IN0
+S0 => 50.IN1
+S0 => 62.IN0
+S0 => 63.IN0
+S0 => 58.IN1
+S0 => 59.IN1
+S0 => 54.IN1
+S0 => 55.IN1
+S0 => 51.IN1
+SLSI => 52.IN2
+SRSI => 62.IN2
+A => 63.IN2
+B => 59.IN0
+C => 55.IN0
+D => 51.IN0
+QC <= 39.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 40.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|81mux:inst8
+d0 => f81mux:sub.d0
+d1 => f81mux:sub.d1
+d2 => f81mux:sub.d2
+d3 => f81mux:sub.d3
+d4 => f81mux:sub.d4
+d5 => f81mux:sub.d5
+d6 => f81mux:sub.d6
+d7 => f81mux:sub.d7
+a => f81mux:sub.a
+b => f81mux:sub.b
+c => f81mux:sub.c
+gn => f81mux:sub.gn
+wn <= f81mux:sub.wn
+y <= f81mux:sub.y
+
+
+|unitarithlogic|81mux:inst8|f81mux:sub
+WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
+D0 => 59.IN0
+A => 19.IN0
+D1 => 60.IN0
+B => 17.IN0
+D2 => 61.IN0
+D3 => 62.IN0
+C => 16.IN0
+D4 => 63.IN0
+D5 => 64.IN0
+D6 => 65.IN0
+D7 => 66.IN0
+GN => 13.IN0
+y <= 82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|81mux:inst9
+d0 => f81mux:sub.d0
+d1 => f81mux:sub.d1
+d2 => f81mux:sub.d2
+d3 => f81mux:sub.d3
+d4 => f81mux:sub.d4
+d5 => f81mux:sub.d5
+d6 => f81mux:sub.d6
+d7 => f81mux:sub.d7
+a => f81mux:sub.a
+b => f81mux:sub.b
+c => f81mux:sub.c
+gn => f81mux:sub.gn
+wn <= f81mux:sub.wn
+y <= f81mux:sub.y
+
+
+|unitarithlogic|81mux:inst9|f81mux:sub
+WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
+D0 => 59.IN0
+A => 19.IN0
+D1 => 60.IN0
+B => 17.IN0
+D2 => 61.IN0
+D3 => 62.IN0
+C => 16.IN0
+D4 => 63.IN0
+D5 => 64.IN0
+D6 => 65.IN0
+D7 => 66.IN0
+GN => 13.IN0
+y <= 82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|81mux:inst5
+d0 => f81mux:sub.d0
+d1 => f81mux:sub.d1
+d2 => f81mux:sub.d2
+d3 => f81mux:sub.d3
+d4 => f81mux:sub.d4
+d5 => f81mux:sub.d5
+d6 => f81mux:sub.d6
+d7 => f81mux:sub.d7
+a => f81mux:sub.a
+b => f81mux:sub.b
+c => f81mux:sub.c
+gn => f81mux:sub.gn
+wn <= f81mux:sub.wn
+y <= f81mux:sub.y
+
+
+|unitarithlogic|81mux:inst5|f81mux:sub
+WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
+D0 => 59.IN0
+A => 19.IN0
+D1 => 60.IN0
+B => 17.IN0
+D2 => 61.IN0
+D3 => 62.IN0
+C => 16.IN0
+D4 => 63.IN0
+D5 => 64.IN0
+D6 => 65.IN0
+D7 => 66.IN0
+GN => 13.IN0
+y <= 82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|81mux:inst10
+d0 => f81mux:sub.d0
+d1 => f81mux:sub.d1
+d2 => ~NO_FANOUT~
+d3 => ~NO_FANOUT~
+d4 => ~NO_FANOUT~
+d5 => f81mux:sub.d5
+d6 => ~NO_FANOUT~
+d7 => ~NO_FANOUT~
+a => f81mux:sub.a
+b => f81mux:sub.b
+c => f81mux:sub.c
+gn => f81mux:sub.gn
+wn <= f81mux:sub.wn
+y <= f81mux:sub.y
+
+
+|unitarithlogic|81mux:inst10|f81mux:sub
+WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
+D0 => 59.IN0
+A => 19.IN0
+D1 => 60.IN0
+B => 17.IN0
+D2 => 61.IN0
+D3 => 62.IN0
+C => 16.IN0
+D4 => 63.IN0
+D5 => 64.IN0
+D6 => 65.IN0
+D7 => 66.IN0
+GN => 13.IN0
+y <= 82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|81mux:inst11
+d0 => ~NO_FANOUT~
+d1 => ~NO_FANOUT~
+d2 => ~NO_FANOUT~
+d3 => ~NO_FANOUT~
+d4 => ~NO_FANOUT~
+d5 => f81mux:sub.d5
+d6 => ~NO_FANOUT~
+d7 => ~NO_FANOUT~
+a => f81mux:sub.a
+b => f81mux:sub.b
+c => f81mux:sub.c
+gn => f81mux:sub.gn
+wn <= f81mux:sub.wn
+y <= f81mux:sub.y
+
+
+|unitarithlogic|81mux:inst11|f81mux:sub
+WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
+D0 => 59.IN0
+A => 19.IN0
+D1 => 60.IN0
+B => 17.IN0
+D2 => 61.IN0
+D3 => 62.IN0
+C => 16.IN0
+D4 => 63.IN0
+D5 => 64.IN0
+D6 => 65.IN0
+D7 => 66.IN0
+GN => 13.IN0
+y <= 82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|81mux:inst12
+d0 => ~NO_FANOUT~
+d1 => ~NO_FANOUT~
+d2 => ~NO_FANOUT~
+d3 => ~NO_FANOUT~
+d4 => ~NO_FANOUT~
+d5 => f81mux:sub.d5
+d6 => ~NO_FANOUT~
+d7 => ~NO_FANOUT~
+a => f81mux:sub.a
+b => f81mux:sub.b
+c => f81mux:sub.c
+gn => f81mux:sub.gn
+wn <= f81mux:sub.wn
+y <= f81mux:sub.y
+
+
+|unitarithlogic|81mux:inst12|f81mux:sub
+WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
+D0 => 59.IN0
+A => 19.IN0
+D1 => 60.IN0
+B => 17.IN0
+D2 => 61.IN0
+D3 => 62.IN0
+C => 16.IN0
+D4 => 63.IN0
+D5 => 64.IN0
+D6 => 65.IN0
+D7 => 66.IN0
+GN => 13.IN0
+y <= 82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|81mux:inst13
+d0 => ~NO_FANOUT~
+d1 => ~NO_FANOUT~
+d2 => ~NO_FANOUT~
+d3 => ~NO_FANOUT~
+d4 => ~NO_FANOUT~
+d5 => f81mux:sub.d5
+d6 => ~NO_FANOUT~
+d7 => ~NO_FANOUT~
+a => f81mux:sub.a
+b => f81mux:sub.b
+c => f81mux:sub.c
+gn => f81mux:sub.gn
+wn <= f81mux:sub.wn
+y <= f81mux:sub.y
+
+
+|unitarithlogic|81mux:inst13|f81mux:sub
+WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
+D0 => 59.IN0
+A => 19.IN0
+D1 => 60.IN0
+B => 17.IN0
+D2 => 61.IN0
+D3 => 62.IN0
+C => 16.IN0
+D4 => 63.IN0
+D5 => 64.IN0
+D6 => 65.IN0
+D7 => 66.IN0
+GN => 13.IN0
+y <= 82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|BlockChoice:inst34
+Sa <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst7.IN0
+S => inst4.IN1
+S => inst5.IN1
+S => inst8.IN0
+S => inst9.IN0
+S => inst10.IN0
+S => inst6.IN1
+a => inst.IN1
+Sb <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+b => inst4.IN0
+Sc <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+c => inst5.IN0
+Sd <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+d => inst1.IN1
+Se <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+e => inst2.IN1
+Sf <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+f => inst3.IN1
+Sg <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+g => inst6.IN0
+
+
+|unitarithlogic|7447:inst28
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|7447:inst29
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|7447:inst31
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unitarithlogic|7447:inst30
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,197 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o1",
+					"strict" : false
+				},
+				{
+					"name" : "o2",
+					"strict" : false
+				},
+				{
+					"name" : "o3",
+					"strict" : false
+				},
+				{
+					"name" : "o4",
+					"strict" : false
+				},
+				{
+					"name" : "o5",
+					"strict" : false
+				},
+				{
+					"name" : "o6",
+					"strict" : false
+				},
+				{
+					"name" : "o7",
+					"strict" : false
+				},
+				{
+					"name" : "o8",
+					"strict" : false
+				},
+				{
+					"name" : "sa0",
+					"strict" : false
+				},
+				{
+					"name" : "sb0",
+					"strict" : false
+				},
+				{
+					"name" : "sc0",
+					"strict" : false
+				},
+				{
+					"name" : "sd0",
+					"strict" : false
+				},
+				{
+					"name" : "se0",
+					"strict" : false
+				},
+				{
+					"name" : "sf0",
+					"strict" : false
+				},
+				{
+					"name" : "sg0",
+					"strict" : false
+				},
+				{
+					"name" : "sa1",
+					"strict" : false
+				},
+				{
+					"name" : "sb1",
+					"strict" : false
+				},
+				{
+					"name" : "sc1",
+					"strict" : false
+				},
+				{
+					"name" : "sd1",
+					"strict" : false
+				},
+				{
+					"name" : "se1",
+					"strict" : false
+				},
+				{
+					"name" : "sf1",
+					"strict" : false
+				},
+				{
+					"name" : "sg1",
+					"strict" : false
+				},
+				{
+					"name" : "sa2",
+					"strict" : false
+				},
+				{
+					"name" : "sb2",
+					"strict" : false
+				},
+				{
+					"name" : "sa3",
+					"strict" : false
+				},
+				{
+					"name" : "sb3",
+					"strict" : false
+				},
+				{
+					"name" : "sc3",
+					"strict" : false
+				},
+				{
+					"name" : "sd3",
+					"strict" : false
+				},
+				{
+					"name" : "se3",
+					"strict" : false
+				},
+				{
+					"name" : "sf3",
+					"strict" : false
+				},
+				{
+					"name" : "sg3",
+					"strict" : false
+				},
+				{
+					"name" : "sc2",
+					"strict" : false
+				},
+				{
+					"name" : "sd2",
+					"strict" : false
+				},
+				{
+					"name" : "se2",
+					"strict" : false
+				},
+				{
+					"name" : "sf2",
+					"strict" : false
+				},
+				{
+					"name" : "sg2",
+					"strict" : false
+				},
+				{
+					"name" : "A1",
+					"strict" : false
+				},
+				{
+					"name" : "B1",
+					"strict" : false
+				},
+				{
+					"name" : "B2",
+					"strict" : false
+				},
+				{
+					"name" : "A2",
+					"strict" : false
+				},
+				{
+					"name" : "A3",
+					"strict" : false
+				},
+				{
+					"name" : "s1_ou_B3",
+					"strict" : false
+				},
+				{
+					"name" : "A4",
+					"strict" : false
+				},
+				{
+					"name" : "s2_ou_B4",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_OR_CALC",
+					"strict" : false
+				},
+				{
+					"name" : "s3_and_get",
+					"strict" : false
+				},
+				{
+					"name" : "SHIFT",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
