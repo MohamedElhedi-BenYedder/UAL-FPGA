@@ -1,0 +1,69 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'SHIFT'
+Slack : -5.362
+TNS   : -21.354
+
+Type  : Slow 1100mV 85C Model Hold 'SHIFT'
+Slack : 0.288
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'SHIFT'
+Slack : -0.538
+TNS   : -3.072
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'SEL_OR_CALC'
+Slack : -0.538
+TNS   : -2.534
+
+Type  : Slow 1100mV 0C Model Setup 'SHIFT'
+Slack : -5.252
+TNS   : -20.900
+
+Type  : Slow 1100mV 0C Model Hold 'SHIFT'
+Slack : 0.265
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'SHIFT'
+Slack : -0.538
+TNS   : -3.100
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'SEL_OR_CALC'
+Slack : -0.538
+TNS   : -2.461
+
+Type  : Fast 1100mV 85C Model Setup 'SHIFT'
+Slack : -1.948
+TNS   : -7.774
+
+Type  : Fast 1100mV 85C Model Hold 'SHIFT'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SEL_OR_CALC'
+Slack : -0.350
+TNS   : -1.223
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SHIFT'
+Slack : -0.113
+TNS   : -0.450
+
+Type  : Fast 1100mV 0C Model Setup 'SHIFT'
+Slack : -1.860
+TNS   : -7.416
+
+Type  : Fast 1100mV 0C Model Hold 'SHIFT'
+Slack : 0.129
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SEL_OR_CALC'
+Slack : -0.323
+TNS   : -1.109
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SHIFT'
+Slack : -0.111
+TNS   : -0.442
+
+------------------------------------------------------------
